@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="style2/stylesheet2.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>Online Clothing Store</title>
+
+    <style>
+        .footersec
+        {
+            margin-bottom: 5px;
+            font-size: x-large;
+        }
+        footer{
+            position: relative;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .navbar-brand
+        {
+        font-size: 40px;
+        }
+        .navbar {
+        background-color: #ff9a9e;
+        color: #fff;
+        padding: 30px 50px;
+        font-size: x-large;
+        }
+        
+        .forgotForm{
+            margin-top: 50px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark custom-bg-color">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Clothing Store</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-md-center" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link" href="index.html">Home</a>
+                        <a class="nav-item nav-link" href="vintage.html">Shop</a>
+                        <a class="nav-item nav-link" href="about.html">About</a>
+                    </div>
+                </div>
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link active" href="login.html" id="loginLink" onclick="logout()">Login</a>
+                    <a class="nav-item nav-link" href="userdetails.html">User Details</a>
+                    <a class="nav-item nav-link" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                </div>
+            </div>
+        </nav>
+
+        
+    </header>
+
+    <form id="registerForm" onsubmit="return validateLogin3()">
+        <label for="inputNAME">Your Name *</label>
+        <input type="text" id="inputNAME" name="userNAME" required>
+    
+        <label for="inputEmail">Your Email *</label>
+        <input type="email" id="inputEmail" name="userEmail" required>
+    
+        <label for="inputNewPassword">Your New Password *</label>
+        <input type="password" id="inputNewPassword" name="newPassword" required>
+    
+        <label for="inputConfirmPassword">Confirm Your New Password *</label>
+        <input type="password" id="inputConfirmPassword" name="confirmPassword" required>
+    
+        <label for="gender">Gender</label>
+        <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+            <option value="preferNotSay">Prefer not say</option>
+        </select>
+    
+        <br>
+        <br>
+        <div class="radio-container">
+            <label for="radioButton">I confirm to share my details *</label>
+            <input type="radio" id="radioButton" name="radioButton" required>
+        </div>
+    
+        <button type="submit">Register</button>
+    </form>
+    
+    
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+        <script src="register.js"></script>
+        <script src="logindetails.js"></script>
+
+        <footer class=" text-light text-center py-3">
+
+            <p>&copy; 2023 Clothing Store</p>
+    
+            <a class="footersec"  href="index.html">Home</a>
+                            <a class="footersec"  href="vintage.html">Shop</a>
+                            <a class="footersec" href="about.html">About</a>
+            
+                            
+        </footer>
+</body>
+
+
+
+</html>

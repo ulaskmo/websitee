@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="style2/stylesheet2.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>Online Clothing Store</title>
+
+    <style>
+        .footersec
+        {
+            margin-bottom: 5px;
+            font-size: x-large;
+        }
+        footer{
+            position: relative;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .navbar-brand
+        {
+        font-size: 40px;
+        }
+        .navbar {
+        background-color: #ff9a9e;
+        color: #fff;
+        padding: 30px 50px;
+        font-size: x-large;
+        }
+        
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark custom-bg-color">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Clothing Store</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-md-center" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link" href="index.html">Home</a>
+                        <a class="nav-item nav-link" href="vintage.html">Shop</a>
+                        <a class="nav-item nav-link active" href="about.html">About</a>
+                    </div>
+                </div>
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link" href="login.html" id="loginLink" onclick="logout()">Login</a>
+                    <a class="nav-item nav-link" href="userdetails.html">User Details</a>
+                    <a class="nav-item nav-link" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                </div>
+            </div>
+        </nav>
+
+        
+    </header>
+
+    <h1>Preamble</h1>
+
+    <p>In the heart of Sligo, where tradition meets innovation, our journey begins at the forefront of a burgeoning textile industry. Nestled amid the scenic landscapes and rich cultural tapestry of Sligo, our garment factory stands as a testament to the fusion of heritage and modernity.</p>
+
+    <p>Our vision transcends the conventional boundaries of a mere clothing establishment. We believe in crafting not just garments, but stories woven with threads of quality, creativity, and sustainability. In a world saturated with fast fashion, we strive to redefine the narrative by embracing a philosophy that resonates with the essence of Sligo.</p>
+    
+    <p>Our commitment to excellence is reflected in every stitch, every pattern, and every garment that leaves our factory floor. Here, we don't merely produce clothes; we curate experiences, blending the old-world craftsmanship with contemporary aesthetics.</p>
+
+    <h1>Contact</h1>
+
+    
+    <form onsubmit="return updateURL()">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea><br>
+
+        <button type="submit">Send Message</button>
+    </form>
+    
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer class=" text-light text-center py-3">
+
+        <p>&copy; 2023 Clothing Store</p>
+
+        <a class="footersec"  href="index.html">Home</a>
+                        <a class="footersec"  href="vintage.html">Shop</a>
+                        <a class="footersec" href="about.html">About</a>
+        
+                        
+    </footer>
+
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+        <script src="logindetails.js"></script>
+
+        <script>
+            function updateURL() {
+                var name = document.getElementById("name").value;
+                var email = document.getElementById("email").value;
+                var message = document.getElementById("message").value;
+    
+                // Create a URL fragment string
+                var fragment = "name=" + encodeURIComponent(name) + "&email=" + encodeURIComponent(email) + "&message=" + encodeURIComponent(message);
+                
+                form.reset();
+                // Update the URL fragment
+                window.location.hash = fragment;
+    
+                // Prevent form from submitting to the server
+                return false;
+            }
+        </script>
+        
+
+</body>
+
+
+
+</html>

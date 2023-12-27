@@ -1,0 +1,109 @@
+/* General Styles */
+body {
+    /*background-image: url('../images/images.jpeg');*/
+    margin: 0; /* Reset default margin */
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.options li {
+    list-style: none;
+    margin: 10px;
+}
+
+.buy-button:hover,
+.category-button:hover {
+    background-color: #263c30;
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+    background-color: #33513f;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #ff9a9e;
+    color: #fff;
+    padding: 30px 50px;
+  }
+
+h1,
+p {
+    margin-left: 50px;
+}
+
+/* Highlight Section Styles */
+.highlight-section {
+    background-color: white;
+    padding: 20px;
+}
+
+iframe {
+    margin-top: 15px;
+}
+
+/* Carousel Styles */
+.carousel-item {
+    height: 900px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Category Button Styles */
+.category-button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    background-color: #33513f;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 25px;
+}
+
+.container2
+{
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.custom-container{
+    margin-top: 75px;
+}
+
+/* Adjust Padding for Body */
+
+
+.footersec{
+    color: white;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  footer {
+    background-color: #ff9a9e;
+    bottom: 0;
+    width: 100%;
+  
+    padding: 20px;
+    text-align: center;
+  }

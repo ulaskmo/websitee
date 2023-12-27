@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link href="style/stylesheet.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <title>Online Clothing Store</title>
+    </head>
+
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark custom-bg-color">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Clothing Store</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-md-center" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-item nav-link active" href="vintage.html">Shop</a>
+                        <a class="nav-item nav-link" href="about.html">About</a>
+                    </div>
+                </div>
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link" href="login.html" id="loginLink" onclick="logout()">Login</a>
+                    <a class="nav-item nav-link" href="userdetails.html">User Details</a>
+                    <a class="nav-item nav-link" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                </div>
+            </div>
+        </nav>
+
+        
+    </header>
+
+
+
+
+<body>
+<!--content-->
+<div class="options">
+    <a href="vintage.html" class="category-button">Vintage</a>
+    <a href="link_to_skinny_website" class="category-button">Skinny</a>
+</div>
+
+<div class="product">
+    <img src="images/newskinny1.jpg" alt="Ürün 1" class="product-image">
+    <div class="product-details">
+        <h2>Product 1</h2>
+        <p>
+            - Spot print
+            <br>
+            - V neckline
+            <br>
+            - 3/4 sleeves
+            <br> 
+            - Smock style
+            <br>
+            - Mini length
+            <br>
+            - Lightweight woven fabric
+            <br>
+            - Fit-and-flare design
+            <br>
+            - Model is 5'7"/170cm and wears UK 10/EU 38/US 6
+
+            <br>
+            Product Code: 878963809
+            
+            <br>
+            <br>
+            <br>
+            Price: €59.99
+        </p>
+        <button class="buy-button" onclick="addToCart('Product 5', 59.99)">Buy</button>
+        </div>
+    
+    </div>
+</div>
+
+<div class="product">
+    <img src="images/skinny2.jpg" alt="Ürün 1" class="product-image">
+    <div class="product-details">
+        <h2>Product 2</h2>
+        <p>
+            - Spot print
+            <br>
+            - V neckline
+            <br>
+            - 3/4 sleeves
+            <br> 
+            - Smock style
+            <br>
+            - Mini length
+            <br>
+            - Lightweight woven fabric
+            <br>
+            - Fit-and-flare design
+            <br>
+            - Model is 5'7"/170cm and wears UK 10/EU 38/US 6
+
+            <br>
+            Product Code: 878963809
+            
+            <br>
+            <br>
+            <br>
+            Price: €69.99
+        </p>
+        <div class="product">
+            <button class="buy-button" onclick="addToCart('Product 6', 69.99)">Buy</button>
+        </div>
+    
+    </div>
+</div>
+<div class="product">
+    <img src="images/skinny3.jpg" alt="Ürün 1" class="product-image">
+    <div class="product-details">
+        <h2>Product 3</h2>
+        <p>
+            - Spot print
+            <br>
+            - V neckline
+            <br>
+            - 3/4 sleeves
+            <br> 
+            - Smock style
+            <br>
+            - Mini length
+            <br>
+            - Lightweight woven fabric
+            <br>
+            - Fit-and-flare design
+            <br>
+            - Model is 5'7"/170cm and wears UK 10/EU 38/US 6
+
+            <br>
+            Product Code: 878963809
+            
+            <br>
+            <br>
+            <br>
+            Price: €79.99
+        </p>
+        <div class="product">
+            <button class="buy-button" onclick="addToCart('Product 7', 79.99)">Buy</button>
+        </div>
+    
+    </div>
+</div>
+
+<div class="product">
+    <img src="images/skinny4.jpg" alt="Ürün 1" class="product-image">
+    <div class="product-details">
+        <h2>Product 4</h2>
+        <p>
+            - Spot print
+            <br>
+            - V neckline
+            <br>
+            - 3/4 sleeves
+            <br> 
+            - Smock style
+            <br>
+            - Mini length
+            <br>
+            - Lightweight woven fabric
+            <br>
+            - Fit-and-flare design
+            <br>
+            - Model is 5'7"/170cm and wears UK 10/EU 38/US 6
+
+            <br>
+            Product Code: 878963809
+            
+            <br>
+            <br>
+            <br>
+            Price: €89.99
+        </p>
+        <div class="product">
+            <button class="buy-button" onclick="addToCart('Product 8', 89.99)">Buy</button>
+        </div>
+    
+    </div>
+</div>
+
+     <!-- Footer -->
+     <footer class=" text-light text-center py-3">
+
+        <p>&copy; 2023 Clothing Store</p>
+
+        <a class="footersec"  href="index.html">Home</a>
+                        <a class="footersec"  href="vintage.html">Shop</a>
+                        <a class="footersec" href="about.html">About</a>
+        
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+        <script src="logindetails.js"></script>
+        <script src="buy.js"></script>
+
+
+</body>
+</html>
